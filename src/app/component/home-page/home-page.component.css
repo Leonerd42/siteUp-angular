@@ -1,0 +1,72 @@
+
+/* Estilos do carrosel de imagens */
+.imgsCarousel{
+    max-height: 600px;
+    -webkit-filter: brightness(60%);
+}
+
+.carousel-caption{
+   top: calc(50% - 100px);
+   text-align: left;
+}
+
+.carousel-caption h5{
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.carousel-caption p{
+    max-width: 500px;
+    font-size: 15px;
+}
+
+/* Imagem abaixo do carousel */ 
+
+.containerImage{
+    position: relative;
+    color: white;
+}
+
+.imgWithText{
+    width: 100%;
+    max-height: 500px;
+    -webkit-filter: brightness(60%);
+}
+
+.legendaFoto{
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    max-width: 500px;
+}
+.legendaFoto h5{
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 700px;
+}
+.legendaFoto p{
+    font-size: 15px;
+}
+
+.legendaFoto a{
+    color: white;
+    font-weight: 500;
+}
+.imgServicos{
+    max-width: 100px;
+    max-height: 250px;
+}
+
+/* Texto */
+
+.container p{
+    margin: 0px;
+}
+
+.container h3{
+    margin: 0px;
+    margin-bottom: 20px;
+    color: #22356B;
+    text-transform: uppercase;
+    font-weight: 700;
+}

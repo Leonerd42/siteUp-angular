@@ -1,0 +1,68 @@
+nav{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.navbar{
+    height: 60px;
+    font-family: Montserrat;    
+    font-weight: 900;
+}
+
+li :active{
+    text-decoration: underline;
+}
+
+.logoNavBarTop{
+    width: 50px;
+    height: 50px;
+}
+
+.footer{
+    min-height: 100px;
+    background: rgb(37, 32, 32);
+    color: #BFBFBF;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.footer p{
+    font-size: 10px;
+}
+
+.LogoBottom{
+    margin: 20px;
+    max-height: 100px;
+}
+
+.textoConsultoria{
+    margin-top: 50px;
+}
+
+.contato, .socialMedia{
+    margin-top: 40px;
+}
+
+.contato h3, .socialMedia h3{
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.redesIcons{
+    margin-top: 20px;
+    height: 50px;
+    width: 50px;
+}
+
+.topIcon{
+    margin-top: 40px;
+}
+
+/** Conteudo de acordo com tela variavel **/
+@media (min-width: 992px){
+    .navbar ul {
+        float: right;
+        right: 30px;
+        position: absolute;
+    } 
+}
