@@ -11,7 +11,7 @@ import { AboutComponent } from './component/about/about.component';
 const routes: Routes = [
   {
     path: '', 
-    component: HomePageComponent
+    component: AboutComponent
   },
   {
       path: 'home', 
