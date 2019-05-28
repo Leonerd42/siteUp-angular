@@ -6,6 +6,7 @@ import { HomePageComponent } from './component/home-page/home-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
 import { ConstComponent } from './component/const/const.component';
+import { AboutComponent } from './component/about/about.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,10 @@ const routes: Routes = [
   {
       path: 'const/:id', 
       component: ConstComponent
+  }, 
+  {
+      path: 'about', 
+      component: AboutComponent
   }
 ];
 
@@ -26,7 +31,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     HomePageComponent,
-    ConstComponent
+    ConstComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light" #target>
+<nav class="navbar navbar-expand-md navbar-light" #target>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -8,19 +8,23 @@
         </a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item">
-              <a class="nav-link" [ngClass]="{'active': homeClass }" (click)="ChangeLink(1);" [routerLink]="['/home']">Home <span class="sr-only">(current)</span></a>
+              <!-- <a class="nav-link"  [ngClass]="{'active': homeClass }" (click)="ChangeLink(1);" [routerLink]="['/home']">Home <span class="sr-only">(current)</span></a>-->
+              <a class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" [ngClass]="{'active': SobreClass}" (click)="ChangeLink(2);" [routerLink]="['/const','sobre']">Sobre</a>
+              <a class="nav-link active" [ngClass]="{'active': SobreClass }" (click)="ChangeLink(2);" [routerLink]="['/about']">Sobre</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" [ngClass]="{'active': ServicosClass}" (click)="ChangeLink(3);" [routerLink]="['/const', 'serviços']"> Serviços </a>
+              <!-- <a class="nav-link" [ngClass]="{'active': ServicosClass }" (click)="ChangeLink(3);" [routerLink]="['/const', 'servicos']"> Serviços </a>-->
+              <a class="nav-link"> Serviços </a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" [ngClass]="{'active': ClientesClass}" (click)="ChangeLink(4);" [routerLink]="['/const', 'clientes']"> Clientes  </a>
+              <!-- <a class="nav-link" [ngClass]="{'active': ClientesClass }" (click)="ChangeLink(4);" [routerLink]="['/const', 'clientes']"> Clientes  </a>-->
+              <a class="nav-link"> Clientes  </a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" [ngClass]="{'active': ContatoClass}" (click)="ChangeLink(5);" [routerLink]="['/const', 'contatos']"> Contatos  </a>
+              <!-- <a class="nav-link" [ngClass]="{'active': ContatoClass }" (click)="ChangeLink(5);" [routerLink]="['/const', 'contatos']"> Contatos  </a>-->
+              <a class="nav-link"> Contatos  </a>
           </li>
         </ul>
     </div>

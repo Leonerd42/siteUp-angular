@@ -1,8 +1,28 @@
 .navbar{
+    top: 0px;
     min-height: 60px;
     font-family: Montserrat;    
     font-weight: 900;
     color: #707070;
+    background: rgb(248,249,250);
+    background: rgba(248,249,250, 0.85) ;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+li{
+    margin-left: 2em;
+}
+
+.pageContent{
+    position: absolute;
+    z-index: 0;
+}
+
+.navbar-default{
+    background: none; 
+    border: none;
 }
 
 .active {
@@ -55,15 +75,17 @@
     margin-top: 40px;
 }
 
+
+
 /** Conteudo de acordo com tela variavel **/
 @media (min-width: 768px){
     nav{
-        padding-left: 150px;
+        padding-left: 12.25vw;
     }
 
     .navbar ul {
         float: right;
-        right: 100px;
+        right: 12.25vw;
         position: absolute;
     } 
 }
