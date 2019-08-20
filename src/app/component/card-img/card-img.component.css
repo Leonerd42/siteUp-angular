@@ -1,0 +1,31 @@
+.card{
+    margin-top: 10px;
+    border-radius: 0px;
+}
+
+.card-body{
+    margin-top: -50px;
+    background: #292C80;
+    padding: 10px;
+    color: white;
+    font-size: 10px;
+}
+
+.imgCard{
+    max-height: 250px;
+    overflow: hidden;
+}
+
+@media (max-width: 360px) {
+    .imgCard{
+        max-height: 200px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 768px){
+    .imgCard{
+        max-height: 260px;
+        overflow: hidden;
+    }
+}

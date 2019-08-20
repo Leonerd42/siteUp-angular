@@ -13,6 +13,7 @@ import { ServicesComponent } from './component/services/services.component';
 import { ClientAreaComponent } from './component/client-area/client-area.component';
 import { OurClientsComponent } from './component/our-clients/our-clients.component';
 import { ContactComponent } from './component/contact/contact.component';
+import { CardImgComponent } from './component/card-img/card-img.component';
 
 const routes: Routes = [
   {
@@ -58,7 +59,8 @@ const routes: Routes = [
     ServicesComponent,
     ClientAreaComponent,
     OurClientsComponent,
-    ContactComponent
+    ContactComponent,
+    CardImgComponent
   ],
   imports: [
     BrowserModule,

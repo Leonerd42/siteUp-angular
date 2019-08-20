@@ -1,14 +1,47 @@
 <div class="aboutContent">
-  <div class="cabecalho">
+   <div class="cabecalho">
     <div class="topImgAbout">
       <img src="/assets/imgs/about-1.jpg" alt="" class="perfect-fit">
     </div>
     <div class="legendaFoto">
-      <h5 class="textoFoto"> A UP Consultores </h5>
+      <h5 class=""> A UP Consultores </h5>
+    </div><!---->
+  </div> 
+  
+  <div class="potencial">
+    <div class="container">
+      <h1 class="mt-5"> Nosso Potencial </h1>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <app-card-img [src]="fotos[0].src" [message]="fotos[0].message"></app-card-img>
+        </div>
+        <div class="col-12 col-md-6">
+          <app-card-img [src]="fotos[1].src" [message]="fotos[1].message"></app-card-img>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-7">
+          <app-card-img [src]="fotos[2].src" [message]="fotos[2].message"></app-card-img>
+        </div>
+        <div class="col-12 col-md-5">
+          <app-card-img [src]="fotos[3].src" [message]="fotos[3].message"></app-card-img>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <app-card-img [src]="fotos[4].src" [message]="fotos[4].message"></app-card-img>
+        </div>
+        <div class="col-12 col-md-6">
+          <app-card-img [src]="fotos[5].src" [message]="fotos[5].message"></app-card-img>
+        </div>
+        <div class="col-12 col-md-3">
+          <app-card-img [src]="fotos[6].src" [message]="fotos[6].message"></app-card-img>
+        </div>
+      </div>      
     </div>
   </div>
 
-  <div class="potencial">
+  <!-- <div class="potencial">
     <h1> Nosso Potencial </h1>
     <div class="container">
       <div class="row">
@@ -36,7 +69,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-8"> <!-- Precisa subir um pouco -->
+        <div class="col-md-8"> <!-- Precisa subir um pouco 
           <div class="mycard">
             <div class="headImg">
               <img src="assets/imgs/a4.jpg" class="fit-img img21">
@@ -60,7 +93,7 @@
         </div>
       </div>
       <div class="row row3">
-          <div class="col-md-3"> <!-- Precisa mudar -->
+          <div class="col-md-3"> <!-- Precisa mudar 
             <div class="mycard">
               <div class="headImg">
                 <img src="assets/imgs/a6.jpg" class="fit-img img31">
@@ -71,7 +104,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6"> <!-- Precisa subir um pouco -->
+          <div class="col-md-6"> <!-- Precisa subir um pouco 
             <div class="mycard">
               <div class="headImg">
                 <img src="assets/imgs/a7.jpg" class="fit-img img32">
@@ -82,7 +115,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3"> <!-- Precisa mudar -->
+          <div class="col-md-3"> <!-- Precisa mudar 
             <div class="mycard">
               <div class="headImg">
                 <img src="assets/imgs/a5.jpg" class="fit-img img33">
@@ -95,8 +128,7 @@
           </div>
         </div>
     </div>
-  </div>
-  
+  </div> -->
   
   <!--<div class="container">
     <h1> Nosso potencial </h1>
@@ -190,7 +222,7 @@
       <h1> Nossos Valores </h1>
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col-12 col-md-6">
             <ul class="none">
               <li> Parceria </li>
               <li> Senso de urgência </li>
@@ -198,7 +230,7 @@
               <li> Criação de valor </li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col-12 col-md-6">
             <p>
               A UP consultores é a união de experiência de seus
               líderes que detém um leque de soluções corporativas
