@@ -5,7 +5,7 @@
     font-weight: 900;
     color: #707070;
     background: rgb(248,249,250);
-    background: rgba(248,249,250, 0.85) ;
+    background: rgba(248,249,250, 0.95) ;
     position: absolute;
     z-index: 2;
     width: 100%;
@@ -50,7 +50,10 @@ li{
 .LogoBottom{
     margin: 20px;
     max-height: 100px;
+    min-width: 80px;
+    min-height: 80px;
 }
+
 
 .textoConsultoria{
     margin-top: 50px;
@@ -71,14 +74,14 @@ li{
     width: 50px;
 }
 
+/* Icone para subir a página */
 .topIcon{
     margin-top: 40px;
 }
 
-
-
 /** Conteudo de acordo com tela variavel **/
 @media (min-width: 768px){
+
     nav{
         padding-left: 12.25vw;
     }
@@ -88,4 +91,42 @@ li{
         right: 12.25vw;
         position: absolute;
     } 
+
 }
+
+ @media (max-width: 768px){
+
+    .navbar-nav{
+        text-align: center;
+    }
+
+    .logoNavBarTop{
+        width: 80px;
+        height: 80px;
+        margin-left: 40px;
+    }
+} 
+/* TODO: Consertar a transição da segunda coluna e do ícone para subir ao topo */
+@media (max-width: 852px){
+
+    .topIcon{
+        width: 80px;
+        height: 80px;
+        float: right;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    .textoConsultoria{
+        margin-top: 0px;
+    }
+
+    .LogoBottom{
+        margin: 20px;
+        max-height: 150px;
+        min-width: 100px;
+        min-height: 100px;
+    }
+
+
+} 

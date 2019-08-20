@@ -1,0 +1,32 @@
+<div class="container">
+    <h2> Fale Conosco </h2>
+    <p> 
+      Por favor, preencha o formulário abaixo para entrar em contato conosco. 
+    </p>
+    <form action="" class="form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="to"> Enviar para: </label>
+        <select class="form-control" formControlName="to" [ngClass]="{ 'is-invalid': submitted && f.to.errors }"  name="Enviar para" required>
+          <option value="consultoria" [selected]="true"> Consultoria </option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input class="form-control" formControlName="name" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" type="text" placeholder="Nome *" required>
+      </div>
+      <div class="form-group">
+        <input class="form-control" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" type="text" placeholder="E-mail *" required>
+      </div>
+      <div class="form-group">
+        <input class="form-control" formControlName="company" [ngClass]="{ 'is-invalid': submitted && f.company.errors }" type="text" placeholder="Empresa *" required>
+      </div>
+      <div class="form-group">
+        <input class="form-control" formControlName="phone" [ngClass]="{ 'is-invalid': submitted && f.phone.errors }" type="text" placeholder="Telefone *" required>
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Mensagem..." class="form-control" formControlName="message" [ngClass]="{ 'is-invalid': submitted && f.message.errors }" rows="5" name="" id=""  > Mensagem *</textarea>
+      </div>
+      <div>
+        <button class="btn btn-primary btn-block expand-full" type="submit"> Enviar </button>
+      </div> 
+    </form>             
+ </div>

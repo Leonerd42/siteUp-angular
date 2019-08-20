@@ -1,0 +1,86 @@
+/** Serviços **/ 
+
+.servicos{
+    margin-top: 80px;
+    /* margin-bottom: 20px; */
+    color: rgb(59, 59, 117);
+}
+
+.servicos p, .servicos li {
+    font-size: 0.8em;
+}
+
+.servicos p{
+    margin-top: 10px;
+}
+
+.servicos ul{
+    padding: 0px 0px 0px 5px;
+    list-style-type: none;
+}
+
+ul > li::before{
+    content: "-";
+    width: 1em;
+    margin-left: -1em;
+}
+
+li{
+    margin-top: 10px; 
+}
+
+.servicos h1{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.servicos .container{
+    padding: 40px;
+}
+
+.titlesUP{
+    font-size: 50px; 
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+}
+
+.titlesUP .up{
+    font-weight: 700;
+}
+
+.advisory .titlesUP{
+    color: rgb(111, 111, 247);
+}
+
+.work .titlesUP{
+    color: purple;
+}
+
+.labor .titlesUP{
+    color: rgb(163, 99, 223);
+}
+
+/* Telas pequenas */
+@media (max-width: 600px) 
+{
+    .servicos{
+        margin-top: 80px;
+        margin-bottom: 50px;
+        color: rgb(59, 59, 117);
+    }
+
+    .container{
+        padding-top: 0px !important;
+    }
+    
+    .titlesUP{
+        font-size: 2.4em; 
+        text-transform: uppercase;
+        border-bottom: 1px solid black;
+    }
+
+    .consult{
+        font-size: 0.8em;
+    }
+
+}

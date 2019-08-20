@@ -1,0 +1,21 @@
+.container{
+    margin-top: 80px;
+}
+
+.container h2{
+    text-align: left; 
+    color: blue; 
+    border-bottom: 1px solid yellow; 
+}
+
+.form{
+    margin: 20px 0px 40px 0px;
+}
+
+/* .is-invalid{
+    background: red; 
+} */
+
+button{
+    text-transform: uppercase;
+}

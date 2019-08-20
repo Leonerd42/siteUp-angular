@@ -7,11 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'siteUP-angular';
   homeClass: boolean = false;
   SobreClass: boolean = true; 
   ServicosClass: boolean = false; 
-  ClientesClass: boolean = false; 
+  ClientAreaClass: boolean = false; 
+  OurClientClass: boolean = false;
   ContatoClass: boolean = false; 
 
   constructor(private router: Router) {
@@ -30,27 +30,31 @@ export class AppComponent {
     }
 
   ChangeLink(num) {
-      this.homeClass = this.SobreClass = this.ServicosClass = this.ClientesClass = this.ContatoClass = false;
+      this.homeClass = this.SobreClass = this.ServicosClass = this.ClientAreaClass = this.OurClientClass = this.ContatoClass = false;
 
       switch(num) {
           case 1: 
-          case 'home':
+          // case 'home':
             this.homeClass = true;
             break;
           case 2: 
-          case 'sobre':
+          // case 'sobre':
             this.SobreClass = true; 
             break; 
           case 3: 
-          case 'servicos':
+          // case 'servicos':
             this.ServicosClass = true; 
             break; 
           case 4: 
-          case 'clientes':
-            this.ClientesClass = true; 
-            break; 
+          // case 'clientes':
+            this.ClientAreaClass = true; 
+            break;
           case 5: 
-          case 'contatos':
+          //case 'nossoclientes':
+            this.OurClientClass = true; 
+            break;
+          case 6: 
+          // case 'contatos':
             this.ContatoClass = true; 
             break;
         }

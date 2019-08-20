@@ -7,24 +7,25 @@
             <img src="assets/svgs/Logo UP.svg" class="logoNavBarTop" alt="">
         </a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-              <!-- <a class="nav-link"  [ngClass]="{'active': homeClass }" (click)="ChangeLink(1);" [routerLink]="['/home']">Home <span class="sr-only">(current)</span></a>-->
+          <!-- <li class="nav-item">
+               <a class="nav-link"  [ngClass]="{'active': homeClass }" (click)="ChangeLink(1);" [routerLink]="['/home']">Home <span class="sr-only">(current)</span></a>
               <a class="nav-link">Home</a>
+          </li> -->
+          <li class="nav-item">
+              <a class="nav-link" [ngClass]="{'active': SobreClass }" (click)="ChangeLink(2);" [routerLink]="['/about']">Sobre</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link active" [ngClass]="{'active': SobreClass }" (click)="ChangeLink(2);" [routerLink]="['/about']">Sobre</a>
+              <a class="nav-link" [ngClass]="{'active': ServicosClass }" (click)="ChangeLink(3);" [routerLink]="['/services']"> Serviços </a>
+              <!-- <a class="nav-link"> Serviços </a> -->
           </li>
           <li class="nav-item">
-              <!-- <a class="nav-link" [ngClass]="{'active': ServicosClass }" (click)="ChangeLink(3);" [routerLink]="['/const', 'servicos']"> Serviços </a>-->
-              <a class="nav-link"> Serviços </a>
+              <a class="nav-link" [ngClass]="{'active': ClientAreaClass }" (click)="ChangeLink(4);" [routerLink]="['client-area']">  Área do Cliente  </a>
           </li>
           <li class="nav-item">
-              <!-- <a class="nav-link" [ngClass]="{'active': ClientesClass }" (click)="ChangeLink(4);" [routerLink]="['/const', 'clientes']"> Clientes  </a>-->
-              <a class="nav-link"> Clientes  </a>
+               <a class="nav-link" [ngClass]="{'active': OurClientClass}" (click)="ChangeLink(5);" [routerLink]="['our-clients']">  Nossos Clientes  </a>
           </li>
           <li class="nav-item">
-              <!-- <a class="nav-link" [ngClass]="{'active': ContatoClass }" (click)="ChangeLink(5);" [routerLink]="['/const', 'contatos']"> Contatos  </a>-->
-              <a class="nav-link"> Contatos  </a>
+              <a class="nav-link" [ngClass]="{'active': ContatoClass }" (click)="ChangeLink(6);" [routerLink]="['contact']"> Contato  </a>
           </li>
         </ul>
     </div>
@@ -35,23 +36,23 @@
 <div class="footer sticky-footer">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-6 order-1 col-md-2 order-md-1"> <!-- col-xs-6 order-sm-1 order-md-1">-->
                 <img src="assets/svgs/Logo UP P&B.svg" class="img-fluid LogoBottom"alt="">
             </div>
-            <div class="col">
+             <div class="col-12 order-3 col-md-3 order-md-2"> <!--col-xs-12 order-sm-3 order-md-2"> -->
                 <p class="textoConsultoria"> Consultoria contábil e tributária que se dedica a cada ponto importante para que você não 
                     precise se preocupar. Isso significa mais eficiência e maior rentabilidade.
                 </p>
             </div>
-            <div class="col contato">
+            <div class="col-12 order-4 col-md-3 order-md-3"> <!-- col-xs-12 order-sm-5 order-md-3 contato"> -->
                 <h3> Contato </h3>
 
-                <p> Rua Marques de Itu, 306, 5o andar, cj 51 - Vila Clementino </p>
-                <p> Telefone (11) 2537-2978/(11) 2537-3252</p>
+                <p> Rua Marques de Itu, 306, 5o andar, cj 51 - Vila Buarque </p>
+                <p> Telefone (11) 3337-2613 / (11) 3337-2617 </p>
 
                 <p> up@upconsultores.com.br </p>    
             </div>
-            <div class="col socialMedia">
+             <div class="col-12 order-5 col-md-3 order-md-4"><!--  col-xs-12 order-sm-4 order-md-4 socialMedia"> -->
                 <h3> Redes Sociais </h3>
 
                 <p>
@@ -59,8 +60,8 @@
                     <a href=""> <img src="assets/svgs/icone FB.svg" class="redesIcons" alt=""> </a>
                 </p>
             </div>
-            <div class="col-1">
-                <a (click)="scrollToElement(target)"> <img src="assets/svgs/icone Top.svg" class="topIcon"alt=""> </a> 
+            <div class="col-6 order-2 col-md-1 order-md-5"> <!-- col-xs-6 order-sm-2 order-md-5"> -->
+                <a (click)="scrollToElement(target)"> <img src="assets/svgs/icone Top.svg" class="topIcon" alt=""> </a> 
             </div>
         </div>
     </div>

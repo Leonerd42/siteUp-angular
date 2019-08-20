@@ -1,0 +1,13 @@
+<div class="OurClient">
+  <h1> Nossos clientes </h1>
+  
+  <div class="clientImg flex">
+    <ng-container *ngFor="let item of clients">
+      <div class="item">
+        <img [src]="item.url" alt="">
+        <p class="text-muted small"> {{ item.descricao }} </p>
+        
+      </div>
+    </ng-container>
+  </div>
+</div>
