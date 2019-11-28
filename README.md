@@ -1,4 +1,7 @@
-# SiteUPAngular
+# SiteUP Angular
+
+Este projeto foi desenvolvido para uma empresa de consultoria juridica. 
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
